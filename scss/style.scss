@@ -1,10 +1,20 @@
+@import "_reset-style.scss";
+@import "_footer.scss";
+@import "_header.scss";
+@import "_main.scss";
+@import "_media.scss";
+@import "_mixins.scss";
+@import "_variable.scss";
 
 
-.header {
-    background-color: black;
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
 }
-.subHeader {
-    background-color: rgb(170, 22, 22);
+._container {
+    min-width: 1020px;
+    box-sizing: content-box;
+    margin: 0px auto;
+    padding:0px 15px;
 }
-.ecoNav {
-}
+
