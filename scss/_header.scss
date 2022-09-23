@@ -44,13 +44,11 @@
 
 .menu {
     font-size: 1rem;
+    color:$black;
     display: flex;
     
 }
-.menu__logo {
-}
-.logo_img {
-}
+
 .menu__list {
     display: flex;
     align-items:center;
@@ -60,8 +58,11 @@
     & :not(:last-child){
         margin-right: 93px;
     }
-}
-.menu__item {
-}
-.menu__link {
+    & .menu__item:first-child{
+        color:$green;
+        font-weight: 700;
+    }
+    & .menu__link{
+        color:inherit;
+    }
 }
