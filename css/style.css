@@ -1,0 +1,145 @@
+/*reset style*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+/*--------------------*/
+/*-----------------font-mixins-------------*/
+.header .Header__line {
+  position: absolute;
+  top: 40px;
+  min-width: 100%;
+  border-bottom: 1px solid rgba(131, 156, 148, 0.2);
+}
+
+.header__container {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  min-height: 122px;
+  color: #000000;
+  min-height: 82px;
+  padding: 5px 0px;
+}
+
+.subHeader__container {
+  padding: 10px 0px 10px 0px;
+  margin-right: -103px;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+}
+.subHeader__container .subHeader__lang {
+  margin-left: 30px;
+  position: relative;
+  display: flex;
+}
+.subHeader__container .subHeader__lang:after {
+  content: url("../img/header/Arrow.png");
+  position: absolute;
+  top: -2px;
+  right: -20px;
+}
+.subHeader__container .subHeader__text a {
+  color: #13AA57;
+}
+
+.menu {
+  font-size: 1rem;
+  display: flex;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 96px;
+}
+.menu__list :not(:last-child) {
+  margin-right: 93px;
+}
+
+html {
+  font-size: 16px;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  max-width: 1020px;
+  box-sizing: content-box;
+  position: relative;
+  margin: 0px auto;
+  /* padding: 0 15px; */
+}/*# sourceMappingURL=style.css.map */

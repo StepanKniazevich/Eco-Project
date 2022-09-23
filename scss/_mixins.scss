@@ -1,0 +1,11 @@
+/*-----------------font-mixins-------------*/
+@mixin fz-rem ($px){
+    font-size:$px/$font-general;
+}
+
+@mixin lineHeight-rem ($px){
+    line-height:$px/$font-general;
+}
+@mixin green-text (){
+    color:$green;
+}

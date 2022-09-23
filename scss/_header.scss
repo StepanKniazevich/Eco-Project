@@ -1,0 +1,67 @@
+
+.header {
+    & .Header__line{
+        position: absolute;
+        top:40px;
+        min-width:100%;
+        border-bottom: 1px solid  rgba(131, 156, 148, 0.2);
+    }
+}
+.header__container {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    min-height: 122px;
+    color:$black;
+    min-height: 82px;
+    padding: 5px 0px;
+
+}
+
+.subHeader__container{
+    padding: 10px 0px 10px 0px;
+    margin-right: -103px;
+    display:flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    flex:1 1 auto;
+    & .subHeader__lang{
+        margin-left:30px;
+        position: relative;
+        display: flex;
+        &:after{
+            content:url("../img/header/Arrow.png");
+            position:absolute;
+            top:-2px;
+            right:-20px;
+        }
+    }
+    & .subHeader__text {
+        & a{
+        @include green-text();}
+    } 
+}
+
+.menu {
+    font-size: 1rem;
+    display: flex;
+    
+}
+.menu__logo {
+}
+.logo_img {
+}
+.menu__list {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 96px;
+    & :not(:last-child){
+        margin-right: 93px;
+    }
+}
+.menu__item {
+}
+.menu__link {
+}
