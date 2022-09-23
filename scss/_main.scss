@@ -1,0 +1,52 @@
+.main{
+    position: relative;
+    font-family: 'Open Sans';
+    & .ecoHabits__container {
+        min-height: 580px;
+        & .ecoHabits__content {
+            padding: 99px 416px 70px 10px;
+            & :not(:last-child) {
+                margin-bottom: 30px;
+            }
+            & .ecoHabits__header {
+                font-size: rem(46px);
+                font-weight: 700;
+                line-height: rem(54px);
+            } 
+            & .ecoHabits__describe {
+                font-weight: 400;
+                font-size: rem(18px);
+                line-height: rem(32px);
+            }  
+            & .ecoHabits__btn {
+                @include btn-green()
+            }
+        }
+        & .img__ecoCircle {
+            position:absolute;
+            top:60px;
+            right:452px;
+        }
+        & .img__ecoBoy {
+            position:absolute;
+            top:130px;
+            right:135px;
+        }
+        & .img__ecoLeaf {
+            position:absolute;
+            top:146px;
+            right:0px;
+        }
+    } 
+}
+
+
+
+
+
+.ecoHabits__header {
+}
+.ecoHabits__describe {
+}
+.ecoHabits__btn {
+}

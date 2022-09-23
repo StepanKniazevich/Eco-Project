@@ -68,7 +68,8 @@ input::-ms-clear {
 }
 
 /*--------------------*/
-/*-----------------font-mixins-------------*/
+/*-----------------rem-function-------------*/
+/* --------------layout-mixins------------ */
 .header .Header__line {
   position: absolute;
   top: 40px;
@@ -80,10 +81,12 @@ input::-ms-clear {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
+  font-size: 0.875rem;
   min-height: 122px;
   color: #000000;
   min-height: 82px;
   padding: 5px 0px;
+  position: relative;
 }
 
 .subHeader__container {
@@ -110,31 +113,79 @@ input::-ms-clear {
 }
 
 .menu {
+  display: flex;
   font-size: 1rem;
   color: #000000;
-  display: flex;
 }
-
-.menu__list {
+.menu .menu__list {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   padding-left: 96px;
 }
-.menu__list :not(:last-child) {
+.menu .menu__list :not(:last-child) {
   margin-right: 93px;
 }
-.menu__list .menu__item:first-child {
+.menu .menu__list .menu__item:first-child {
   color: #13AA57;
   font-weight: 700;
 }
-.menu__list .menu__link {
+.menu .menu__list .menu__link {
   color: inherit;
 }
 
+.main {
+  position: relative;
+  font-family: "Open Sans";
+}
+.main .ecoHabits__container {
+  min-height: 580px;
+}
+.main .ecoHabits__container .ecoHabits__content {
+  padding: 99px 416px 70px 10px;
+}
+.main .ecoHabits__container .ecoHabits__content :not(:last-child) {
+  margin-bottom: 30px;
+}
+.main .ecoHabits__container .ecoHabits__content .ecoHabits__header {
+  font-size: 2.875rem;
+  font-weight: 700;
+  line-height: 3.375rem;
+}
+.main .ecoHabits__container .ecoHabits__content .ecoHabits__describe {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+.main .ecoHabits__container .ecoHabits__content .ecoHabits__btn {
+  padding: 8px 22px;
+  background-color: #13AA57;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  filter: drop-shadow(0px 13px 20px rgba(118, 196, 125, 0.411204));
+  border-radius: 3px;
+}
+.main .ecoHabits__container .img__ecoCircle {
+  position: absolute;
+  top: 60px;
+  right: 452px;
+}
+.main .ecoHabits__container .img__ecoBoy {
+  position: absolute;
+  top: 130px;
+  right: 135px;
+}
+.main .ecoHabits__container .img__ecoLeaf {
+  position: absolute;
+  top: 146px;
+  right: 0px;
+}
+
 html {
-  font-size: 16px;
+  font-size: 100%;
 }
 
 .wrapper {
@@ -147,7 +198,6 @@ html {
 ._container {
   max-width: 1020px;
   box-sizing: content-box;
-  position: relative;
   margin: 0px auto;
   /* padding: 0 15px; */
 }/*# sourceMappingURL=style.css.map */
