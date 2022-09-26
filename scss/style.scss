@@ -1,10 +1,13 @@
 @import "_reset-style.scss";
 @import "_variables.scss";
+@import "_functions.scss";
 @import "_mixins.scss";
+@import "_extends.scss";
 @import "_media.scss"; 
 @import "_header.scss";
 @import "_main.scss";
 @import "_footer.scss";
+
 
 html {font-size: ($font-general / 16px) * 100%;}
 
@@ -15,7 +18,7 @@ html {font-size: ($font-general / 16px) * 100%;}
     flex-direction: column;
 }
 ._container {
-    max-width: 1020px;
+    max-width: $_container-wigth;
     box-sizing: content-box;
     margin: 0px auto;
    /* padding: 0 15px; */

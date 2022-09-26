@@ -1,38 +1,40 @@
-.main{
+.main {
     position: relative;
     font-family: 'Open Sans';
-    & .ecoHabits__container {
+}
+.ecoHabits {
+    .ecoHabits__container {
         min-height: 580px;
-        & .ecoHabits__content {
+        .ecoHabits__content {
             padding: 99px 416px 70px 10px;
             & :not(:last-child) {
                 margin-bottom: 30px;
             }
-            & .ecoHabits__header {
+            .ecoHabits__header {
                 font-size: rem(46px);
                 font-weight: 700;
                 line-height: rem(54px);
             } 
-            & .ecoHabits__describe {
+            .ecoHabits__describe {
                 font-weight: 400;
                 font-size: rem(18px);
                 line-height: rem(32px);
             }  
-            & .ecoHabits__btn {
-                @include btn-green()
+            .ecoHabits__btn {
+                @extend %btn-green;
             }
         }
-        & .img__ecoCircle {
+        .img__ecoCircle {
             position:absolute;
             top:60px;
             right:452px;
         }
-        & .img__ecoBoy {
+        .img__ecoBoy {
             position:absolute;
             top:130px;
             right:135px;
         }
-        & .img__ecoLeaf {
+        .img__ecoLeaf {
             position:absolute;
             top:146px;
             right:0px;
@@ -40,13 +42,65 @@
     } 
 }
 
+.ecoAboutUs {
+    %ecoAboutUs-style__container {
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+    } 
+    %ecoAboutUs__content {
+        h2{}
+        
 
+    }
 
+    .ecoAboutUs__container {
+        min-height:947px;
+        padding: 74px 50px 0px 74px;
+        .ecoAboutUs__header { 
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: rem(46px);
+            line-height: rem(64px);
+            text-align: center;
+        }
+        .ecoBag {
+            .ecoBag__img {
+                width:procent-wigth($_container-wigth,300px);
+                height:procent-height(947px,315px);
+            }
+        }
+    }
 
-
-.ecoHabits__header {
+.ecoAboutUs__ecoBag {
 }
-.ecoHabits__describe {
+.ecoBag {
 }
-.ecoHabits__btn {
+
+.ecoBag__describe {
+}
+.ecoBag__header {
+}
+.ecoBag__question {
+}
+.ecoBag__btn {
+}
+.ecoBag__link {
+}
+.ecoAboutUs__ecoCup {
+}
+.ecoCup {
+}
+.ecoCup__describe {
+}
+.ecoCup__header {
+}
+.ecoCup__question {
+}
+.ecoCup__btn {
+}
+.ecoCup__link {
+}
+.ecoCup__img {
+}
 }

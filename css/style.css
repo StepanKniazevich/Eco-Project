@@ -69,14 +69,27 @@ input::-ms-clear {
 
 /*--------------------*/
 /*-----------------rem-function-------------*/
-/* --------------layout-mixins------------ */
-.header .Header__line {
+.subHeader__text a {
+  color: #13AA57;
+}
+
+.ecoHabits .ecoHabits__container .ecoHabits__content .ecoHabits__btn {
+  padding: 8px 22px;
+  background-color: #13AA57;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  filter: drop-shadow(0px 13px 20px rgba(118, 196, 125, 0.411204));
+  border-radius: 3px;
+}
+
+.header__line {
   position: absolute;
   top: 40px;
   min-width: 100%;
   border-bottom: 1px solid rgba(131, 156, 148, 0.2);
 }
-
 .header__container {
   font-family: "Open Sans";
   font-style: normal;
@@ -97,41 +110,37 @@ input::-ms-clear {
   flex-wrap: wrap;
   flex: 1 1 auto;
 }
-.subHeader__container .subHeader__lang {
+.subHeader__lang {
   margin-left: 30px;
   position: relative;
   display: flex;
 }
-.subHeader__container .subHeader__lang:after {
+.subHeader__lang:after {
   content: url("../img/header/Arrow.png");
   position: absolute;
   top: -2px;
   right: -20px;
 }
-.subHeader__container .subHeader__text a {
-  color: #13AA57;
-}
-
 .menu {
   display: flex;
   font-size: 1rem;
   color: #000000;
 }
-.menu .menu__list {
+.menu__list {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   padding-left: 96px;
 }
-.menu .menu__list :not(:last-child) {
+.menu__list :not(:last-child) {
   margin-right: 93px;
 }
-.menu .menu__list .menu__item:first-child {
+.menu__item:first-child {
   color: #13AA57;
   font-weight: 700;
 }
-.menu .menu__list .menu__link {
+.menu__link {
   color: inherit;
 }
 
@@ -139,51 +148,57 @@ input::-ms-clear {
   position: relative;
   font-family: "Open Sans";
 }
-.main .ecoHabits__container {
+
+.ecoHabits .ecoHabits__container {
   min-height: 580px;
 }
-.main .ecoHabits__container .ecoHabits__content {
+.ecoHabits .ecoHabits__container .ecoHabits__content {
   padding: 99px 416px 70px 10px;
 }
-.main .ecoHabits__container .ecoHabits__content :not(:last-child) {
+.ecoHabits .ecoHabits__container .ecoHabits__content :not(:last-child) {
   margin-bottom: 30px;
 }
-.main .ecoHabits__container .ecoHabits__content .ecoHabits__header {
+.ecoHabits .ecoHabits__container .ecoHabits__content .ecoHabits__header {
   font-size: 2.875rem;
   font-weight: 700;
   line-height: 3.375rem;
 }
-.main .ecoHabits__container .ecoHabits__content .ecoHabits__describe {
+.ecoHabits .ecoHabits__container .ecoHabits__content .ecoHabits__describe {
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 2rem;
 }
-.main .ecoHabits__container .ecoHabits__content .ecoHabits__btn {
-  padding: 8px 22px;
-  background-color: #13AA57;
-  color: #FFFFFF;
-  font-weight: 600;
-  font-size: 1.125rem;
-  line-height: 2rem;
-  filter: drop-shadow(0px 13px 20px rgba(118, 196, 125, 0.411204));
-  border-radius: 3px;
-}
-.main .ecoHabits__container .img__ecoCircle {
+.ecoHabits .ecoHabits__container .img__ecoCircle {
   position: absolute;
   top: 60px;
   right: 452px;
 }
-.main .ecoHabits__container .img__ecoBoy {
+.ecoHabits .ecoHabits__container .img__ecoBoy {
   position: absolute;
   top: 130px;
   right: 135px;
 }
-.main .ecoHabits__container .img__ecoLeaf {
+.ecoHabits .ecoHabits__container .img__ecoLeaf {
   position: absolute;
   top: 146px;
   right: 0px;
 }
 
+.ecoAboutUs .ecoAboutUs__container {
+  min-height: 947px;
+  padding: 74px 50px 0px 74px;
+}
+.ecoAboutUs .ecoAboutUs__container .ecoAboutUs__header {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 2.875rem;
+  line-height: 4rem;
+  text-align: center;
+}
+.ecoAboutUs .ecoAboutUs__container .ecoBag .ecoBag__img {
+  width: 28.8461538462%;
+  height: 33.2629355861%;
+}
 html {
   font-size: 100%;
 }
@@ -196,7 +211,7 @@ html {
 }
 
 ._container {
-  max-width: 1020px;
+  max-width: 1040px;
   box-sizing: content-box;
   margin: 0px auto;
   /* padding: 0 15px; */

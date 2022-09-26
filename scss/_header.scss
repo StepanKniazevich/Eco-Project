@@ -1,46 +1,47 @@
 
 .header {
-    & .Header__line{
+    &__line{
         position: absolute;
         top:40px;
         min-width:100%;
         border-bottom: 1px solid  rgba(131, 156, 148, 0.2);
     }
+    &__container {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: rem(14px);
+        min-height: 122px;
+        color:$black;
+        min-height: 82px;
+        padding: 5px 0px;
+        position: relative;
+    }
 }
-.header__container {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: rem(14px);
-    min-height: 122px;
-    color:$black;
-    min-height: 82px;
-    padding: 5px 0px;
-    position: relative;
-
-}
-
-.subHeader__container{
-    padding: 10px 0px 10px 0px;
-    margin-right: -103px;
-    display:flex;
-    justify-content: right;
-    flex-wrap: wrap;
-    flex:1 1 auto;
-    & .subHeader__lang{
+.subHeader{
+    &__container {
+        padding: 10px 0px 10px 0px;
+        margin-right: -103px;
+        display:flex;
+        justify-content: right;
+        flex-wrap: wrap;
+        flex:1 1 auto;
+    }
+    &__lang {
         margin-left:30px;
         position: relative;
         display: flex;
-        &:after{
+        &:after {   
             content:url("../img/header/Arrow.png");
             position:absolute;
             top:-2px;
-            right:-20px;
+            right:-20px;   
         }
     }
-    & .subHeader__text {
-        & a{
-        @include green-text();}
+    &__text {
+        a {
+             @extend %green-text;
+        }
     } 
 }
 
@@ -48,22 +49,22 @@
     display: flex;  
     font-size: 1rem;
     color:$black;
-    & .menu__list {
+    &__list {
         display: flex;
         align-items:center;
         justify-content: center;
         flex-wrap: wrap;
         padding-left: 96px;
-        & :not(:last-child){
+        & :not(:last-child) {
             margin-right: 93px;
         }
-        & .menu__item:first-child{
-            color:$green;
-            font-weight: 700;
-        }
-        & .menu__link{
-            color:inherit;
-        }
+    }
+    &__item:first-child {
+        color:$green;
+        font-weight: 700;
+    }
+    &__link {
+        color:inherit;
     }
 }
 
