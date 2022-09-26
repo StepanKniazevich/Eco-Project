@@ -1,11 +1,15 @@
 
 .header {
-    &__line{
+    width: 100%;
+    background-color: $white;
+    box-shadow: 0px -18px 52px rgba(46, 91, 255, 0.2);
+    &__line {
         position: absolute;
         top:40px;
         min-width:100%;
         border-bottom: 1px solid  rgba(131, 156, 148, 0.2);
     }
+    
     &__container {
         font-family: 'Open Sans';
         font-style: normal;
@@ -17,15 +21,19 @@
         padding: 5px 0px;
         position: relative;
     }
-}
+
 .subHeader{
     &__container {
+        position:relative;
+        z-index: 10;
         padding: 10px 0px 10px 0px;
+        background: $white;
         margin-right: -103px;
         display:flex;
         justify-content: right;
         flex-wrap: wrap;
         flex:1 1 auto;
+        background-color: $white;
     }
     &__lang {
         margin-left:30px;
@@ -46,6 +54,7 @@
             }
         }
     } 
+}
 }
 
 .menu {

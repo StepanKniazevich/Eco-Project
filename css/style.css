@@ -69,7 +69,7 @@ input::-ms-clear {
 
 /*--------------------*/
 /*-----------------rem-function-------------*/ /*------------layot-extends------------------*/
-.subHeader__text a {
+.header .subHeader__text a {
   color: #13AA57;
 }
 
@@ -89,6 +89,11 @@ input::-ms-clear {
 
 /*-----------------main-extends----------------*/
 /*-----------------ecoAboutUS-extends----------*/
+.header {
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0px -18px 52px rgba(46, 91, 255, 0.2);
+}
 .header__line {
   position: absolute;
   top: 40px;
@@ -106,27 +111,30 @@ input::-ms-clear {
   padding: 5px 0px;
   position: relative;
 }
-
-.subHeader__container {
+.header .subHeader__container {
+  position: relative;
+  z-index: 10;
   padding: 10px 0px 10px 0px;
+  background: #FFFFFF;
   margin-right: -103px;
   display: flex;
   justify-content: right;
   flex-wrap: wrap;
   flex: 1 1 auto;
+  background-color: #FFFFFF;
 }
-.subHeader__lang {
+.header .subHeader__lang {
   margin-left: 30px;
   position: relative;
   display: flex;
 }
-.subHeader__lang:after {
+.header .subHeader__lang:after {
   content: url("../img/header/Arrow.png");
   position: absolute;
   top: -2px;
   right: -20px;
 }
-.subHeader__text a:hover {
+.header .subHeader__text a:hover {
   text-decoration: underline;
 }
 
@@ -157,6 +165,12 @@ input::-ms-clear {
   font-family: "Open Sans";
 }
 
+.ecoHabits__bg {
+  position: absolute;
+  right: 0px;
+  top: -100px;
+  z-index: -1;
+}
 .ecoHabits__container {
   min-height: 580px;
 }
@@ -263,13 +277,11 @@ input::-ms-clear {
 .ecoAboutUs .ecoCup__wrapper {
   margin-top: 129px;
   margin: 74px;
+  max-width: 32.2115384615%;
 }
 .ecoAboutUs .ecoCup__btn-wrapper {
   display: flex;
   justify-content: center;
-}
-.ecoAboutUs .ecoCup__wrapper {
-  max-width: 32.2115384615%;
 }
 
 html {

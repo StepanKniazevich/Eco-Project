@@ -3,6 +3,12 @@
     font-family: 'Open Sans';
 }
 .ecoHabits {
+    &__bg {
+        position: absolute;
+        right:0px;
+        top:-100px;
+        z-index:-1;
+    }
     &__container {
         min-height: 580px;
     }     
@@ -40,7 +46,7 @@
         position:absolute;
         top:146px;
         right:0px;
-    }
+    } 
 }
 .ecoAboutUs {
     font-family: 'Open Sans'; 
@@ -53,7 +59,6 @@
         font-size: rem(46px);
         line-height: rem(64px);
         text-align: center;
-
     }
     .ecoBag,.ecoCup {
         display: flex;
@@ -117,13 +122,11 @@
         &__wrapper {
             margin-top:129px;
             margin:74px;
+            max-width: procent-wigth($_container-wigth,335px);
         }
         &__btn-wrapper {
             display: flex;
             justify-content:center;
-        }
-        &__wrapper {
-            max-width: procent-wigth($_container-wigth,335px);
         }
     }
 }    
