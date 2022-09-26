@@ -68,12 +68,12 @@ input::-ms-clear {
 }
 
 /*--------------------*/
-/*-----------------rem-function-------------*/
+/*-----------------rem-function-------------*/ /*------------layot-extends------------------*/
 .subHeader__text a {
   color: #13AA57;
 }
 
-.ecoHabits .ecoHabits__container .ecoHabits__content .ecoHabits__btn {
+.ecoAboutUs .ecoBag__btn, .ecoAboutUs .ecoCup__btn, .ecoHabits__btn {
   padding: 8px 22px;
   background-color: #13AA57;
   color: #FFFFFF;
@@ -81,9 +81,14 @@ input::-ms-clear {
   font-size: 1.125rem;
   line-height: 2rem;
   filter: drop-shadow(0px 13px 20px rgba(118, 196, 125, 0.411204));
-  border-radius: 3px;
+  border-radius: 5px;
+}
+.ecoAboutUs .ecoBag__btn:hover, .ecoAboutUs .ecoCup__btn:hover, .ecoHabits__btn:hover {
+  background-color: rgb(2, 109, 2);
 }
 
+/*-----------------main-extends----------------*/
+/*-----------------ecoAboutUS-extends----------*/
 .header__line {
   position: absolute;
   top: 40px;
@@ -121,6 +126,10 @@ input::-ms-clear {
   top: -2px;
   right: -20px;
 }
+.subHeader__text a:hover {
+  text-decoration: underline;
+}
+
 .menu {
   display: flex;
   font-size: 1rem;
@@ -136,9 +145,8 @@ input::-ms-clear {
 .menu__list :not(:last-child) {
   margin-right: 93px;
 }
-.menu__item:first-child {
+.menu__item:hover {
   color: #13AA57;
-  font-weight: 700;
 }
 .menu__link {
   color: inherit;
@@ -149,56 +157,121 @@ input::-ms-clear {
   font-family: "Open Sans";
 }
 
-.ecoHabits .ecoHabits__container {
+.ecoHabits__container {
   min-height: 580px;
 }
-.ecoHabits .ecoHabits__container .ecoHabits__content {
+.ecoHabits__content {
   padding: 99px 416px 70px 10px;
 }
-.ecoHabits .ecoHabits__container .ecoHabits__content :not(:last-child) {
+.ecoHabits__content :not(:last-child) {
   margin-bottom: 30px;
 }
-.ecoHabits .ecoHabits__container .ecoHabits__content .ecoHabits__header {
+.ecoHabits__header {
   font-size: 2.875rem;
   font-weight: 700;
   line-height: 3.375rem;
 }
-.ecoHabits .ecoHabits__container .ecoHabits__content .ecoHabits__describe {
+.ecoHabits__describe {
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 2rem;
 }
-.ecoHabits .ecoHabits__container .img__ecoCircle {
+.ecoHabits .img__ecoCircle {
   position: absolute;
   top: 60px;
   right: 452px;
 }
-.ecoHabits .ecoHabits__container .img__ecoBoy {
+.ecoHabits .img__ecoBoy {
   position: absolute;
   top: 130px;
   right: 135px;
 }
-.ecoHabits .ecoHabits__container .img__ecoLeaf {
+.ecoHabits .img__ecoLeaf {
   position: absolute;
   top: 146px;
   right: 0px;
 }
 
-.ecoAboutUs .ecoAboutUs__container {
-  min-height: 947px;
-  padding: 74px 50px 0px 74px;
-}
-.ecoAboutUs .ecoAboutUs__container .ecoAboutUs__header {
+.ecoAboutUs {
   font-family: "Open Sans";
+}
+.ecoAboutUs__container {
+  min-height: 947px;
+  padding: 74px 60px 0px 74px;
+}
+.ecoAboutUs__header {
   font-weight: 700;
   font-size: 2.875rem;
   line-height: 4rem;
   text-align: center;
 }
-.ecoAboutUs .ecoAboutUs__container .ecoBag .ecoBag__img {
+.ecoAboutUs .ecoBag, .ecoAboutUs .ecoCup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ecoAboutUs .ecoCup__header, .ecoAboutUs .ecoBag__header {
+  font-weight: 600;
+  font-size: 1.3125rem;
+  line-height: 1.8125rem;
+}
+.ecoAboutUs .ecoCup__header span, .ecoAboutUs .ecoBag__header span {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.75rem;
+  color: #13AA57;
+  vertical-align: middle;
+  margin: 0px 20px;
+}
+.ecoAboutUs .ecoBag__question, .ecoAboutUs .ecoCup__question {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+  margin-top: 30px;
+}
+.ecoAboutUs .ecoBag__btn, .ecoAboutUs .ecoCup__btn {
+  margin-top: 40px;
+}
+.ecoAboutUs .ecoCup__link, .ecoAboutUs .ecoBag__link {
+  display: flex;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  color: #13AA57;
+  margin-top: 30px;
+}
+.ecoAboutUs .ecoCup__link:before, .ecoAboutUs .ecoBag__link:before {
+  content: url("../img/main/eco__bag/map.png");
+  margin-right: 20px;
+}
+.ecoAboutUs .ecoCup__link:hover, .ecoAboutUs .ecoBag__link:hover {
+  text-decoration: underline;
+}
+.ecoAboutUs .ecoBag__wrapper {
+  max-width: 30%;
+}
+.ecoAboutUs .ecoBag__img {
+  margin-left: 126px;
   width: 28.8461538462%;
   height: 33.2629355861%;
 }
+.ecoAboutUs .ecoBag__btn-wrapper {
+  display: flex;
+  justify-content: right;
+}
+.ecoAboutUs .ecoCup__wrapper {
+  margin-top: 129px;
+  margin: 74px;
+}
+.ecoAboutUs .ecoCup__btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.ecoAboutUs .ecoCup__wrapper {
+  max-width: 32.2115384615%;
+}
+
 html {
   font-size: 100%;
 }

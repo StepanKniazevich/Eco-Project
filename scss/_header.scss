@@ -40,7 +40,10 @@
     }
     &__text {
         a {
-             @extend %green-text;
+            @extend %green-text;
+            &:hover{
+                text-decoration: underline;
+            }
         }
     } 
 }
@@ -59,9 +62,8 @@
             margin-right: 93px;
         }
     }
-    &__item:first-child {
+    &__item:hover {
         color:$green;
-        font-weight: 700;
     }
     &__link {
         color:inherit;
