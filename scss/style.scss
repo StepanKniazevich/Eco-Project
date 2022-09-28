@@ -18,7 +18,7 @@ html {font-size: ($font-general / 16px) * 100%;}
     flex-direction: column;
 }
 ._container {
-    max-width: $_container-wigth;
+    max-width: $_container-width;
     box-sizing: content-box;
     margin: 0px auto;
    /*  padding: 0 30px; */
