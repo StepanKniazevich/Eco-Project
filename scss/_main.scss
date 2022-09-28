@@ -27,6 +27,7 @@
         font-weight: 400;
         font-size: rem(18px);
         line-height: rem(32px);
+        color:$light-black;
     }  
     &__btn {
         @extend %btn-green;
@@ -51,7 +52,7 @@
 .ecoAboutUs {
     font-family: 'Open Sans'; 
     &__container {
-        min-height:947px;
+        min-height:800px;
         padding: 74px 60px 0px 74px;
     }    
     &__header { 
@@ -69,7 +70,7 @@
         font-weight: 600;
         font-size: rem(21px);
         line-height: rem(29px);
-        span{
+        span {
             font-family: 'PT Sans';
             font-style: normal;
             font-weight: 700;
@@ -107,6 +108,7 @@
     .ecoBag {
         &__wrapper {
             max-width: procent-wigth($_container-wigth,312px);
+            margin-top: 70px;
         }
         &__img {
             margin-left: 126px;
@@ -119,9 +121,9 @@
         }
     }
     .ecoCup {
+        margin-top:129px;
         &__wrapper {
-            margin-top:129px;
-            margin:74px;
+            margin-left:74px;
             max-width: procent-wigth($_container-wigth,335px);
         }
         &__btn-wrapper {
@@ -130,3 +132,75 @@
         }
     }
 }    
+
+.ecoEvents {
+    &__container {
+        min-height: 747px;
+        font-family: 'Open Sans';  
+        position: relative;
+    }
+    &__header {
+        font-weight: 700;
+        font-size: rem(46px);
+        line-height: rem(64px);
+        text-align: center;
+        margin-top: 120px;
+
+    }
+    &__wrapper {
+        display: flex;
+        margin-left: 25px;
+        margin-top: 50px;
+        min-height: 444px;
+        background: #FFFFFF;
+    }
+    &__lecture-wrapper {
+        background: #FFFFFF;
+        box-shadow: -1px 13px 20px #F0F2F4;
+    }
+    &__describe {
+        @include ecoEvents__style-card(32px,40px);
+        padding: 21px 207px 29px 30px;
+    }
+    &__ecoCards-wrapper {
+        margin-left: 20px;
+        background: #FFFFFF;
+        box-shadow: -1px 13px 20px #F0F2F4;
+        border-radius: 4px;
+        border-top: 7px solid $green;
+        padding: 0px 22px 0px 30px;
+        .ecoCards {
+            &__item {
+                padding: 27px 0px 20px 0px;
+                @include ecoEvents__style-card(24px,36px);
+                &:first-child {
+                    border-bottom: 2px solid rgba(150, 141, 153, 0.42);
+                }
+            }
+        }
+    } 
+    &__button {
+        font-weight: 400;
+        font-size: rem(18px);
+        line-height: rem(32px);
+        color: $green;
+        padding: 8px 20px;
+        margin-left: 600px;
+        background-color: $white;
+        border:1px solid ;
+        border-radius: 5px;
+        border-image: linear-gradient(0deg, $green, rgb(40, 240, 67)) 1;
+        &:hover {
+            background-color: $green;
+            color:$white;
+        }
+    }
+    &__leaf-img {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        position:absolute;
+        left:0px;
+        top:400px;
+        z-index: -5;
+    }
+}

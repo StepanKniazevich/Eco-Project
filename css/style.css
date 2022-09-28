@@ -68,7 +68,9 @@ input::-ms-clear {
 }
 
 /*--------------------*/
-/*-----------------rem-function-------------*/ /*------------layot-extends------------------*/
+/*-----------------rem-function-------------*/
+/*------------ecoEvents-mixins----------*/
+/*------------layot-extends------------------*/
 .header .subHeader__text a {
   color: #13AA57;
 }
@@ -189,6 +191,7 @@ input::-ms-clear {
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 2rem;
+  color: #263238;
 }
 .ecoHabits .img__ecoCircle {
   position: absolute;
@@ -210,7 +213,7 @@ input::-ms-clear {
   font-family: "Open Sans";
 }
 .ecoAboutUs__container {
-  min-height: 947px;
+  min-height: 800px;
   padding: 74px 60px 0px 74px;
 }
 .ecoAboutUs__header {
@@ -264,6 +267,7 @@ input::-ms-clear {
 }
 .ecoAboutUs .ecoBag__wrapper {
   max-width: 30%;
+  margin-top: 70px;
 }
 .ecoAboutUs .ecoBag__img {
   margin-left: 126px;
@@ -274,14 +278,137 @@ input::-ms-clear {
   display: flex;
   justify-content: right;
 }
-.ecoAboutUs .ecoCup__wrapper {
+.ecoAboutUs .ecoCup {
   margin-top: 129px;
-  margin: 74px;
+}
+.ecoAboutUs .ecoCup__wrapper {
+  margin-left: 74px;
   max-width: 32.2115384615%;
 }
 .ecoAboutUs .ecoCup__btn-wrapper {
   display: flex;
   justify-content: center;
+}
+
+.ecoEvents__container {
+  min-height: 747px;
+  font-family: "Open Sans";
+  position: relative;
+}
+.ecoEvents__header {
+  font-weight: 700;
+  font-size: 2.875rem;
+  line-height: 4rem;
+  text-align: center;
+  margin-top: 120px;
+}
+.ecoEvents__wrapper {
+  display: flex;
+  margin-left: 25px;
+  margin-top: 50px;
+  min-height: 444px;
+  background: #FFFFFF;
+}
+.ecoEvents__lecture-wrapper {
+  background: #FFFFFF;
+  box-shadow: -1px 13px 20px #F0F2F4;
+}
+.ecoEvents__describe {
+  padding: 21px 207px 29px 30px;
+}
+.ecoEvents__describe p {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #839C94;
+}
+.ecoEvents__describe h2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #000000;
+}
+.ecoEvents__describe a {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #13AA57;
+}
+.ecoEvents__describe a:hover {
+  text-decoration: underline;
+}
+.ecoEvents__describe a:hover:after {
+  content: url("../img/main/eco__events/Shape.png");
+  margin-left: 20px;
+}
+.ecoEvents__ecoCards-wrapper {
+  margin-left: 20px;
+  background: #FFFFFF;
+  box-shadow: -1px 13px 20px #F0F2F4;
+  border-radius: 4px;
+  border-top: 7px solid #13AA57;
+  padding: 0px 22px 0px 30px;
+}
+.ecoEvents__ecoCards-wrapper .ecoCards__item {
+  padding: 27px 0px 20px 0px;
+}
+.ecoEvents__ecoCards-wrapper .ecoCards__item p {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #839C94;
+}
+.ecoEvents__ecoCards-wrapper .ecoCards__item h2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: #000000;
+}
+.ecoEvents__ecoCards-wrapper .ecoCards__item a {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #13AA57;
+}
+.ecoEvents__ecoCards-wrapper .ecoCards__item a:hover {
+  text-decoration: underline;
+}
+.ecoEvents__ecoCards-wrapper .ecoCards__item a:hover:after {
+  content: url("../img/main/eco__events/Shape.png");
+  margin-left: 20px;
+}
+.ecoEvents__ecoCards-wrapper .ecoCards__item:first-child {
+  border-bottom: 2px solid rgba(150, 141, 153, 0.42);
+}
+.ecoEvents__button {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #13AA57;
+  padding: 8px 20px;
+  margin-left: 600px;
+  background-color: #FFFFFF;
+  border: 1px solid;
+  border-radius: 5px;
+  border-image: linear-gradient(0deg, #13AA57, rgb(40, 240, 67)) 1;
+}
+.ecoEvents__button:hover {
+  background-color: #13AA57;
+  color: #FFFFFF;
+}
+.ecoEvents__leaf-img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: absolute;
+  left: 0px;
+  top: 400px;
+  z-index: -5;
 }
 
 html {
@@ -299,5 +426,5 @@ html {
   max-width: 1040px;
   box-sizing: content-box;
   margin: 0px auto;
-  /* padding: 0 15px; */
+  /*  padding: 0 30px; */
 }/*# sourceMappingURL=style.css.map */

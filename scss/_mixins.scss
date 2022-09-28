@@ -1,0 +1,32 @@
+
+/*------------ecoEvents-mixins----------*/
+@mixin ecoEvents__style-card ($font-size__header,$line-height__header) {
+    & p {
+        font-style: italic;
+        font-weight: 400;
+        font-size: rem(14px);
+        line-height: rem(24px);
+        color:$grey;
+    }
+    & h2 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: rem($font-size__header);
+        line-height: rem($line-height__header);
+        color: #000000;
+    } 
+    & a {
+        font-weight: 600;
+        font-size: rem(16px);
+        line-height: rem(24px);
+        color: $green;
+        &:hover {
+            text-decoration: underline;
+            &:after {
+                content:url("../img/main/eco__events/Shape.png");
+                margin-left: 20px;
+            }
+        }
+    }  
+} 
