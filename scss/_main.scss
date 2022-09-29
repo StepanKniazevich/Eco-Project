@@ -209,7 +209,6 @@
 .ecoTips {  
     &__container {
         padding-top: 150px;  
-        min-height: 546px;
         font-family: 'Open Sans'; 
     }
     &__header {
@@ -221,11 +220,11 @@
         color: $black;
     }
     &__ecoCards {
-        margin-top: 40px;
+        margin-top: 80px;
         .ecoCards {
             &__slide {
-                max-width:procent-width($_container-width,408px);
-                max-height: procent-height(546px,300px);
+                max-width:408px;
+                max-height: 300px;
                 padding: 30px 40px 55px 40px;
                 background-color: $white;
                 box-sizing: border-box;
@@ -251,6 +250,10 @@
                 justify-content:center;
                 width: 52px;
                 height: 52px;
+                cursor: pointer;
+                &:after {
+                    display: none;
+                    }
             }
             &__next {
                 background-color:$white;
@@ -263,7 +266,6 @@
                 border-radius:20px 0px 0px 20px;
             }
         }
-
     }
 }
 
