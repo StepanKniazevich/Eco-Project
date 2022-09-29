@@ -30,3 +30,18 @@
         }
     }  
 } 
+
+/*-----------------ecoSliderBtn-mixins----------*/
+
+@mixin ecoSliderBtn-exends ($bg-color,$type-btn,$transform) {   // $transform: true or false
+    background-color:$bg-color;
+     background-image:url("../img/main/eco__slider/#{$type-btn}.png");
+     background-size: auto;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-position: center;
+     @if ($transform) {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+     }
+}

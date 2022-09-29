@@ -1,15 +1,14 @@
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
+var swiper = new Swiper(".ecoCards", {
+    slidesPerView: 2,
+    spaceBetween: 50,
+    slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
     navigation: {
       nextEl: ".ecoCards__next",
       prevEl: ".ecoCards__prev",
     },
+    autoplay: {
+        delay: 2000,
+      }
   });

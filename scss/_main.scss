@@ -220,50 +220,71 @@
         color: $black;
     }
     &__ecoCards {
+        padding: 0px 20%;
         margin-top: 80px;
         .ecoCards {
             &__slide {
-                max-width:408px;
-                max-height: 300px;
+                min-width:procent-wight(408px);
+                min-height: 300px;
                 padding: 30px 40px 55px 40px;
                 background-color: $white;
                 box-sizing: border-box;
                 box-shadow: -2px 23px 40px #cadbee;
+                &:hover {
+                    box-shadow: -2px 23px 40px #7e96b3;
+                    transition: all 0.3s ease;
+                } 
             }
             &__content {
                 font-weight: 400;
                 font-size: rem(18px);
                 line-height: rem(27px);
-                color: #324148;
                 margin-top: 20px;
+                &:hover {
+                    background: linear-gradient(to right, #acacac 20%, #324148 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: all 0.3s ease;
+                }   
             }
             &__img {
                 display:block;
                 margin: 0px auto;
             }
+            &__buttons {
+                display: flex;
+                justify-content:center;
+            }
             &__buttons-wrapper {
                 display:flex;
             }
             &__prev,&__next {
-                display:flex;
-                align-items:center;
-                justify-content:center;
                 width: 52px;
                 height: 52px;
                 cursor: pointer;
+                box-sizing: border-box;
+                transition: all 0.3s ease;  
                 &:after {
                     display: none;
-                    }
+                }
             }
             &__next {
-                background-color:$white;
-                border: 1px solid green;
-                box-sizing:border-box;
+                border: 1px solid $green;
                 border-radius:0px 20px 20px 0px;
+                @include ecoSliderBtn-exends($white,'next',false); 
+                &:hover {
+                    border-radius:20px 0px 0px 20px;
+                    @include ecoSliderBtn-exends($green,'prev',true); 
+                }
             }
             &__prev {
-                background-color:$green;
                 border-radius:20px 0px 0px 20px;
+                @include ecoSliderBtn-exends($green,'prev',false); 
+                &:hover {
+                    border: 1px solid $green;
+                    border-radius:0px 20px 20px 0px;
+                    @include ecoSliderBtn-exends($white,'next',true); 
+                }
             }
         }
     } 

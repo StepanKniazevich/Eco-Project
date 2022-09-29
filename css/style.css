@@ -70,6 +70,7 @@ input::-ms-clear {
 /*--------------------*/
 /*-----------------rem-function-------------*/
 /*------------ecoEvents-mixins----------*/
+/*-----------------ecoSliderBtn-mixins----------*/
 /*------------layot-extends------------------*/
 .header .subHeader__text a {
   color: #13AA57;
@@ -91,7 +92,6 @@ input::-ms-clear {
 }
 
 /*-----------------main-extends----------------*/
-/*-----------------ecoAboutUS-extends----------*/
 .header {
   width: 100%;
   background-color: #FFFFFF;
@@ -428,50 +428,95 @@ input::-ms-clear {
   color: #000000;
 }
 .ecoTips__ecoCards {
+  padding: 0px 20%;
   margin-top: 80px;
 }
 .ecoTips__ecoCards .ecoCards__slide {
-  max-width: 408px;
-  max-height: 300px;
+  min-width: procent-wight(408px);
+  min-height: 300px;
   padding: 30px 40px 55px 40px;
   background-color: #FFFFFF;
   box-sizing: border-box;
   box-shadow: -2px 23px 40px #cadbee;
 }
+.ecoTips__ecoCards .ecoCards__slide:hover {
+  box-shadow: -2px 23px 40px #7e96b3;
+  transition: all 0.3s ease;
+}
 .ecoTips__ecoCards .ecoCards__content {
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.6875rem;
-  color: #324148;
   margin-top: 20px;
+}
+.ecoTips__ecoCards .ecoCards__content:hover {
+  background: linear-gradient(to right, #acacac 20%, #324148 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
 }
 .ecoTips__ecoCards .ecoCards__img {
   display: block;
   margin: 0px auto;
 }
+.ecoTips__ecoCards .ecoCards__buttons {
+  display: flex;
+  justify-content: center;
+}
 .ecoTips__ecoCards .ecoCards__buttons-wrapper {
   display: flex;
 }
 .ecoTips__ecoCards .ecoCards__prev, .ecoTips__ecoCards .ecoCards__next {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 52px;
   height: 52px;
   cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 .ecoTips__ecoCards .ecoCards__prev:after, .ecoTips__ecoCards .ecoCards__next:after {
   display: none;
 }
 .ecoTips__ecoCards .ecoCards__next {
-  background-color: #FFFFFF;
-  border: 1px solid green;
-  box-sizing: border-box;
+  border: 1px solid #13AA57;
   border-radius: 0px 20px 20px 0px;
+  background-color: #FFFFFF;
+  background-image: url("../img/main/eco__slider/next.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: center;
+}
+.ecoTips__ecoCards .ecoCards__next:hover {
+  border-radius: 20px 0px 0px 20px;
+  background-color: #13AA57;
+  background-image: url("../img/main/eco__slider/prev.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 .ecoTips__ecoCards .ecoCards__prev {
-  background-color: #13AA57;
   border-radius: 20px 0px 0px 20px;
+  background-color: #13AA57;
+  background-image: url("../img/main/eco__slider/prev.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: center;
+}
+.ecoTips__ecoCards .ecoCards__prev:hover {
+  border: 1px solid #13AA57;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #FFFFFF;
+  background-image: url("../img/main/eco__slider/next.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 html {
