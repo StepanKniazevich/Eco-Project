@@ -23,11 +23,9 @@
 
 .subHeader{
     &__container {
-        position:relative;
-        z-index: 10;
+        margin-right: -100px;
         padding: 10px 0px 10px 0px;
         background: $white;
-        margin-right: -103px;
         display:flex;
         justify-content: right;
         flex-wrap: wrap;
@@ -64,7 +62,6 @@
         display: flex;
         align-items:center;
         justify-content: center;
-        flex-wrap: wrap;
         padding-left: 96px;
         & :not(:last-child) {
             margin-right: 93px;
@@ -75,6 +72,9 @@
     }
     &__link {
         color:inherit;
+    }
+    &__hamb {
+        display: none;
     }
 }
 

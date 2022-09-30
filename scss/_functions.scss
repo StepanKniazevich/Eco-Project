@@ -8,4 +8,8 @@
 @function procent-height ($height-container,$height-block) {
     @return (($height-block/$height-container) * 100%); 
 }
+@function responsive-fz ($min-fz,$max-fz,$min-widht) {
+    @return ($min-fz + ($max-fz - $min-fz + ($max-fz - $min-fz)*0.7 ) * (100vh-$min-width / $_container-width))
+
+}
 
