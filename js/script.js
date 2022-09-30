@@ -1,4 +1,4 @@
-var swiper = new Swiper(".ecoCards", {
+let swiper = new Swiper(".ecoCards", {
     slidesPerView: 2,
     spaceBetween: 50,
     slidesPerGroup: 1,
@@ -8,6 +8,7 @@ var swiper = new Swiper(".ecoCards", {
       nextEl: ".ecoCards__next",
       prevEl: ".ecoCards__prev",
     },
+    grabCursor: true,
     autoplay: {
         delay: 2000,
       }

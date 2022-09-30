@@ -13,7 +13,8 @@
         min-height: 580px;
     }     
     &__content {
-        padding: 99px 416px 70px 10px;
+        padding: 99px 0px 0px 10px;
+        max-width: 600px;
         & :not(:last-child) {
             margin-bottom: 30px;
         }
@@ -219,6 +220,15 @@
         text-align: center;
         color: $black;
     }
+    &__bg-img {
+        position:absolute;
+        top:0;
+        left:0; 
+        min-width:100%;
+        min-height:100%;
+        box-shadow: 20px -18px 52px #098cd8;
+        z-index: -1;
+    }
     &__ecoCards {
         padding: 0px 20%;
         margin-top: 80px;
@@ -263,10 +273,7 @@
                 height: 52px;
                 cursor: pointer;
                 box-sizing: border-box;
-                transition: all 0.3s ease;  
-                &:after {
-                    display: none;
-                }
+                transition: all 0.5s ease;  
             }
             &__next {
                 border: 1px solid $green;
@@ -287,6 +294,65 @@
                 }
             }
         }
-    } 
+    }
 }
+
+.ecoNews {
+    min-height: 441px;  
+    background: #F4F5F7;
+    margin-top: 80px;
+    font-family: 'Open Sans';
+    color:$color-text__form;
+    &__container {   
+        padding: 57px 24px;
+        display: flex; 
+    }
+    &__content-wrapper {
+        padding: 25px 25px 135px 50px;
+        & :not(:last-child) {
+            margin-bottom: 30px;
+        }   
+    }
+    &__img {
+        width:procent-width($_container-width,292px);
+        height:procent-height(441px,327px);
+    }   
+    &__header {
+        font-weight: 700;
+        font-size: rem(46px);
+        line-height: rem(40px);
+    }
+    &__desc {
+        margin-right: 100px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: rem(18px);
+        line-height: rem(32px);
+    }
+
+    .ecoNews__ecoForm {
+        .ecoForm {
+            &__input-email {
+                padding: 15px 0px 15px 20px;
+                box-sizing: border-box;
+                min-width: procent-width(650px,385px);
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 18px;
+
+
+
+color: #839C94;
+            }
+            &__submit {
+                min-width: 201px;
+                @extend %btn-green;
+                
+            } 
+        }
+    }
+       
+   
+}
+
 

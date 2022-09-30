@@ -76,7 +76,7 @@ input::-ms-clear {
   color: #13AA57;
 }
 
-.ecoAboutUs .ecoBag__btn, .ecoAboutUs .ecoCup__btn, .ecoHabits__btn {
+.ecoNews .ecoNews__ecoForm .ecoForm__submit, .ecoAboutUs .ecoBag__btn, .ecoAboutUs .ecoCup__btn, .ecoHabits__btn {
   padding: 8px 22px;
   background-color: #13AA57;
   color: #FFFFFF;
@@ -87,7 +87,7 @@ input::-ms-clear {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-.ecoAboutUs .ecoBag__btn:hover, .ecoAboutUs .ecoCup__btn:hover, .ecoHabits__btn:hover {
+.ecoNews .ecoNews__ecoForm .ecoForm__submit:hover, .ecoAboutUs .ecoBag__btn:hover, .ecoAboutUs .ecoCup__btn:hover, .ecoHabits__btn:hover {
   background-color: rgb(2, 109, 2);
 }
 
@@ -178,7 +178,8 @@ input::-ms-clear {
   min-height: 580px;
 }
 .ecoHabits__content {
-  padding: 99px 416px 70px 10px;
+  padding: 99px 0px 0px 10px;
+  max-width: 600px;
 }
 .ecoHabits__content :not(:last-child) {
   margin-bottom: 30px;
@@ -427,6 +428,15 @@ input::-ms-clear {
   text-align: center;
   color: #000000;
 }
+.ecoTips__bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  box-shadow: 20px -18px 52px #098cd8;
+  z-index: -1;
+}
 .ecoTips__ecoCards {
   padding: 0px 20%;
   margin-top: 80px;
@@ -471,10 +481,7 @@ input::-ms-clear {
   height: 52px;
   cursor: pointer;
   box-sizing: border-box;
-  transition: all 0.3s ease;
-}
-.ecoTips__ecoCards .ecoCards__prev:after, .ecoTips__ecoCards .ecoCards__next:after {
-  display: none;
+  transition: all 0.5s ease;
 }
 .ecoTips__ecoCards .ecoCards__next {
   border: 1px solid #13AA57;
@@ -517,6 +524,52 @@ input::-ms-clear {
   background-position: center;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+.ecoNews {
+  min-height: 441px;
+  background: #F4F5F7;
+  margin-top: 80px;
+  font-family: "Open Sans";
+  color: #2B292D;
+}
+.ecoNews__container {
+  padding: 57px 24px;
+  display: flex;
+}
+.ecoNews__content-wrapper {
+  padding: 25px 25px 135px 50px;
+}
+.ecoNews__content-wrapper :not(:last-child) {
+  margin-bottom: 30px;
+}
+.ecoNews__img {
+  width: 28.0769230769%;
+  height: 74.1496598639%;
+}
+.ecoNews__header {
+  font-weight: 700;
+  font-size: 2.875rem;
+  line-height: 2.5rem;
+}
+.ecoNews__desc {
+  margin-right: 100px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+.ecoNews .ecoNews__ecoForm .ecoForm__input-email {
+  padding: 15px 0px 15px 20px;
+  box-sizing: border-box;
+  min-width: 59.2307692308%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #839C94;
+}
+.ecoNews .ecoNews__ecoForm .ecoForm__submit {
+  min-width: 201px;
 }
 
 html {
