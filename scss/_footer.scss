@@ -1,0 +1,69 @@
+.ecoFooter {
+    font-family: 'Open Sans';
+    &__container {
+        position: relative;
+        min-height: 400px;
+    }
+
+    &__wrapper {
+        position: absolute;
+        right:0px;
+        top:80px;
+        display: flex;
+    }
+    &__startHabits {
+        margin-right: 330px;
+        .ecoFooter__btn {
+            @extend %btn-green;
+            margin-top: 60px;
+        }
+    }    
+    &__copyright {
+        position:absolute;
+        bottom:0px;
+        left:50%;
+        font-weight: 600;
+        font-size: rem(14px);
+        line-height: rem(19px);
+        color:rgba(131, 156, 148, 1); ;
+    }
+    &__ecoList {
+        color: rgba(131, 156, 148, 1);
+        .ecoList__item {
+            font-weight: 600;
+            font-size: rem(16px);
+            line-height: rem(40px);
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            &:first-child {
+                font-weight: 600;
+                font-size: rem(22px);
+                line-height: rem(28px);
+                color: #2B292D;
+                margin-right: 180px;
+            }
+            .item__link {
+                color: inherit;
+                &:hover {
+                    color:$green;
+                    transition: all 0.3s;
+                }
+             }
+        }
+    }
+    &__ecoIcons {
+        display:flex;
+        .ecoIcons__img {
+            cursor: pointer;
+         }
+        div {
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+        }
+        
+    }
+}    
+  
+
