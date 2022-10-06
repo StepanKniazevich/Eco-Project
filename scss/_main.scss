@@ -7,7 +7,7 @@
         position: absolute;
         right:0px;
         top:-100px;
-        z-index:-1;
+        z-index:-2;
     }
     &__container {
         min-height: 580px;
@@ -339,10 +339,7 @@
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 18px;
-
-
-
-color: #839C94;
+                color: #839C94;
             }
             &__submit {
                 min-width: 201px;

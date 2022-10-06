@@ -114,6 +114,12 @@ input::-ms-clear {
   padding: 5px 0px;
   position: relative;
 }
+.header__humb {
+  display: none;
+}
+.header__popup {
+  display: none;
+}
 .header .subHeader__container {
   margin-right: -100px;
   padding: 10px 0px 10px 0px;
@@ -159,9 +165,6 @@ input::-ms-clear {
 .menu__link {
   color: inherit;
 }
-.menu__hamb {
-  display: none;
-}
 
 .main {
   position: relative;
@@ -172,7 +175,7 @@ input::-ms-clear {
   position: absolute;
   right: 0px;
   top: -100px;
-  z-index: -1;
+  z-index: -2;
 }
 .ecoHabits__container {
   min-height: 580px;
@@ -572,6 +575,88 @@ input::-ms-clear {
   min-width: 201px;
 }
 
+@media (max-width: 1200px) {
+  .menu {
+    font-size: calc(4px + 0.8263888889vw);
+  }
+  .subHeader__container {
+    margin: 0px;
+  }
+  .ecoHabits__content {
+    padding: auto;
+  }
+  .ecoHabits .img__ecoBoy {
+    opacity: 50%;
+    z-index: -1;
+  }
+  .ecoHabits .img__ecoCircle {
+    opacity: 0%;
+  }
+}
+@media (max-width: 900px) {
+  .header {
+    position: fixed;
+    z-index: 10;
+    max-height: 50px;
+  }
+  .header__line {
+    display: none;
+  }
+  .header .subHeader {
+    display: none;
+  }
+  .header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+  }
+  .header .menu__list {
+    display: none;
+  }
+  .header .menu__logo .logo__img {
+    max-width: 50%;
+    max-height: 40%;
+  }
+  .header .hamb__wrapper {
+    background: url("../img/header/burger-menu/Shape.png") center center/cover no-repeat;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+  }
+  .header__popup {
+    position: fixed;
+    top: 50px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fdfdfd;
+    z-index: 100;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .header .open {
+    left: 0;
+  }
+  .header .open .menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+  }
+  .header .open .menu__list .menu__item {
+    margin: 0px;
+  }
+  .header .open .menu__list .menu__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .header .open .menu__list {
+    font-size: 0.75rem;
+  }
+}
 html {
   font-size: 100%;
 }

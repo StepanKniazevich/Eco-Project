@@ -20,6 +20,13 @@
         padding: 5px 0px;
         position: relative;
     }
+    &__humb {
+        display:none;
+    }
+    &__popup {
+        display:none;
+    }
+
 
 .subHeader{
     &__container {
@@ -56,7 +63,7 @@
 
 .menu {
     display: flex;  
-    font-size: 1rem;
+    font-size: rem(16px);
     color:$black;
     &__list {
         display: flex;
@@ -72,9 +79,6 @@
     }
     &__link {
         color:inherit;
-    }
-    &__hamb {
-        display: none;
     }
 }
 
